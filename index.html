@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo-container">
+            <img class="CRED-logo" src="./assets/CRED.png" alt="CRED">
+        </div>
+        <div class="nav-elements">
+            <ul class="nav-ele-container">
+                <li ><a href="./pages/Score.html" class="score">CREDIT score check</a></li>
+                <li ><a onclick="handlePayments()" target="_blank" class="payment">CREDIT card bill payment</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <!-- Label section -->
+        <div class="offer-label">
+            <span class="offer-label-text">
+                Pay credit card bills. Earn guaranteed ₹200 back
+            </span> &nbsp;
+            <span><a href="#" class="redeem-offer">
+                claim now
+            </a>
+            </span>
+        </div>
+
+        <div class="main-hero-section">
+            <!-- Rahul Dravid -->
+            <div class="video-container">
+                
+                <video autoplay muted loop src="./assets/Final CRED AD.mp4" type="video/mp4"></video>
+            </div>
+             <!-- main text section -->
+            <div class="hero-heading">
+                rewards for paying <br/>
+                credit card bills.
+            </div>
+
+            <div class="hero-sub-heading">
+                Join 1.4+ million members who win the rewards and cash backs every day 
+            </div>     
+            <!-- video section -->
+            <div class="download-section">
+                <button class="download-btn"><a href="https://play.google.com/store/apps/details?id=com.dreamplug.androidapp&hl=en_IN" class="download-link">Download CRED</a></button>
+            </div>  
+            <div class="data-safety-container">
+                <img src="./assets/white-lock.png" alt="">
+                <span class="safety-heading">
+                    YOUR DATA ISN'T OUR BUSINESS. KEEPING IT SAFE IS.
+                </span>
+                <!-- load upon scroll text -->
+                <div class="main-text">
+                    <section class="block-text-top">
+                        all your personal data
+                    </section>
+                    <section class="block-text-top">
+                        transactions are encrypted and 
+                    </section>
+                    <section class="block-text-bottom">
+                        secured. there's not room for mistakes
+                    </section>
+                    <section class="block-text-bottom">
+                        because we didn't leave any.
+                    </section>
+                </div>    
+            </div> 
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="./assets/CRED.png" alt="CRED Logo">
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="Facebook"></a>
+                        <a target="_blank" href="https://x.com/cred_club?lang=en">
+                            <img src="./assets/icons8-twitter-50.png" alt="Twitter">
+                        </a>
+                        <a href="#"><img src="./assets/icons8-instagram-64.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 CRED. All rights reserved.</p>
+                </div>
+            </div>
+              
+        </div>
+    </div>
+    <script>
+        function handlePayments(){
+            const baseURL = `http://localhost:5173`;
+            const cardNumber = localStorage.getItem('Card number') ;
+            let ValidMY = localStorage.getItem('ValidMY') ;
+            ValidMY = ValidMY.replace('-','/')
+            const username = localStorage.getItem("username");
+            // Set the URL
+            const url = baseURL + `?cardNumber=${cardNumber}&validity=${ValidMY}&username=${username}`
+            window.location.href = url;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  height: 18%;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.CRED-logo {
+  cursor: default;
+  max-width: 93%;
+  max-height: 93%;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    width: 100%;
+    height: 12%;
+    background-color: black;
+  }
+}
+
+.nav-elements {
+  width: 40%;
+  display: flex;
+}
+
+.nav-ele-container {
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid white; */
+}
+
+li {
+  /* border: 2px solid red; */
+  cursor: default;
+  font-size: 1.13em;
+  font-family: "Poppins", sans-serif;
+}
+
+.payment,
+.score {
+  color: white;
+  text-decoration: none;
+}
+
+.payment:hover,
+.score:hover {
+  cursor: pointer;
+}
+
+.hero-section,
+.main-hero-section {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.offer-label {
+  background-color: rgb(39, 39, 39);
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-label-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.redeem-offer {
+  color: rgb(56, 38, 255);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.video-container {
+  margin-top: 1.75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+video {
+  border-radius: 5px;
+  width: 85%;
+  height: 10%;
+}
+
+.hero-heading,
+.hero-sub-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "poppins", serif;
+  margin-top: 2%;
+}
+
+.hero-heading {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.hero-sub-heading {
+  font-size: 20px;
+  /* font-weight: 800; */
+}
+
+.download-section {
+  margin-top: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+
+.download-btn {
+  background-color: white;
+  width: 20%;
+  height: 90%;
+  border-radius: 50px;
+}
+
+.download-link {
+  text-decoration: none;
+  color: black;
+  font-family: "poppins", serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.data-safety-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.safety-heading {
+  cursor: default;
+  color: white;
+  font-family: "poppins", serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main-text {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-text-top,
+.block-text-bottom {
+  font-family: "Poppins", serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  animation: scrolling ease-out 0.5s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes scrolling {
+  from {
+    opacity: 0.2;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.footer {
+  margin-top: 3%;
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 20%;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.footer-social > a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-bottom {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;
+}
