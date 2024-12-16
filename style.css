@@ -1,265 +1,469 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: black;
-  font-family: "Poppins", sans-serif;
 }
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  width: 100%;
+  height: 18%;
   background-color: black;
+  justify-content: space-evenly;
 }
 
-.logo-container img {
-  max-width: 150px;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.CRED-logo {
+  cursor: default;
+  max-width: 93%;
+  max-height: 93%;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    width: 100%;
+    height: 12%;
+    background-color: black;
+  }
+}
+
+.nav-elements {
+  width: 40%;
+  display: flex;
 }
 
 .nav-ele-container {
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-evenly;
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.nav-ele-container li {
-  margin: 0 10px;
+li {
+  cursor: default;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
-.nav-ele-container a {
+.payment,
+.score {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
 }
 
-.nav-ele-container a:hover {
-  text-decoration: underline;
+.payment:hover,
+.score:hover {
+  cursor: pointer;
 }
 
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
+.hero-section,
+.main-hero-section {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 
 .offer-label {
   background-color: rgb(39, 39, 39);
-  color: white;
-  padding: 10px;
-  font-size: 1.1rem;
-  text-align: center;
-  width: 100%;
-}
-
-.offer-label .redeem-offer {
-  color: rgb(56, 38, 255);
-  text-decoration: none;
-}
-
-.video-container video {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 5px;
-}
-
-.hero-heading {
-  font-size: 2.5rem;
-  margin: 20px 0;
-  font-weight: bold;
-}
-
-.hero-sub-heading {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.download-section {
-  margin: 20px 0;
-}
-
-.download-btn {
-  padding: 15px 25px;
-  background-color: white;
-  border: none;
-  border-radius: 25px;
-}
-
-.download-btn a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.data-safety-container {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.data-safety-container img {
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.safety-heading {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.main-text {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.footer {
-  background-color: #1c1c1c;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer-content {
+  height: 7%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+.offer-label-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.redeem-offer {
+  color: rgb(56, 38, 255);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.video-container {
+  margin-top: 1.75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+video {
+  border-radius: 5px;
+  width: 85%;
+  height: 10%;
+}
+
+.hero-heading,
+.hero-sub-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "poppins", serif;
+  margin-top: 2%;
+}
+
+.hero-heading {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.hero-sub-heading {
+  font-size: 20px;
+  /* font-weight: 800; */
+}
+
+.download-section {
+  margin-top: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+}
+
+.download-btn {
+  background-color: white;
+  width: 20%;
+  height: 90%;
+  border-radius: 50px;
+}
+
+.download-link {
+  text-decoration: none;
+  color: black;
+  font-family: "poppins", serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.data-safety-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.safety-heading {
+  cursor: default;
+  color: white;
+  font-family: "poppins", serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main-text {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-text-top,
+.block-text-bottom {
+  font-family: "Poppins", serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  animation: scrolling ease-out 0.5s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes scrolling {
+  from {
+    opacity: 0.2;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.footer {
+  margin-top: 3%;
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 20%;
+}
+
 .footer-logo img {
-  max-width: 120px;
-  margin-bottom: 20px;
+  max-width: 150px;
 }
 
 .footer-links ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-.footer-links li {
+.footer-links ul li {
   margin: 5px 0;
 }
 
-.footer-links a {
+.footer-links > ul > li > a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
-.footer-links a:hover {
+.footer-links > ul > li > a:hover {
   text-decoration: underline;
 }
 
-.footer-social a {
+.footer-social > a {
   margin: 0 10px;
 }
 
 .footer-social img {
-  width: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 .footer-bottom {
   background-color: #111;
   padding: 10px 0;
-  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
   color: #bbb;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
-  .hero-heading {
-    font-size: 2rem;
-  }
-
-  .hero-sub-heading {
-    font-size: 1rem;
-  }
-
-  .download-btn {
-    width: 60%;
-  }
-
-  .nav-ele-container li {
-    margin: 0 5px;
-  }
-}
+/* start */
 
 @media (max-width: 768px) {
   .navigation {
     flex-direction: column;
-    align-items: flex-start;
+    height: auto;
+    padding: 10px 0;
   }
 
-  .logo-container img {
-    max-width: 120px;
+  .CRED-logo {
+    max-width: 80%;
+    margin: auto;
   }
 
   .nav-ele-container {
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10px;
-  }
-
-  .nav-ele-container li {
-    margin: 5px 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
   }
 
   .hero-heading {
-    font-size: 1.8rem;
+    font-size: 60px;
+    text-align: center;
   }
 
   .hero-sub-heading {
-    font-size: 0.9rem;
+    font-size: 18px;
+    text-align: center;
   }
 
   .download-btn {
-    width: 80%;
+    width: 50%;
+    font-size: 18px;
   }
 
-  .main-text {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .navigation {
-    padding: 10px;
+  video {
+    width: 100%;
+    height: auto;
   }
 
-  .hero-heading {
-    font-size: 1.5rem;
-  }
-
-  .hero-sub-heading {
-    font-size: 0.8rem;
-  }
-
-  .download-btn {
-    width: 90%;
-    padding: 10px;
-  }
-
-  .main-text {
-    font-size: 0.9rem;
+  .block-text-top, .block-text-bottom {
+    font-size: 40px;
+    text-align: center;
   }
 
   .footer-content {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .footer-links ul {
     padding: 0;
+    margin: 0;
   }
 
-  .footer-links li {
-    margin: 3px 0;
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navigation */
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust height dynamically */
+    padding: 10px 5px;
+  }
+
+  .logo-container {
+    margin: 0 auto;
+  }
+
+  .CRED-logo {
+    max-width: 80%; /* Scale logo */
+    max-height: auto;
+  }
+
+  .nav-elements{
+    width: 100%;
+  }
+
+  .nav-ele-container {
+    flex-direction: column;
+    gap: 10px; /* Add space between items */
+  }
+
+  li {
+    font-size: 1.1em; /* Reduce font size */
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 20px 10px;
+  }
+
+  .hero-heading {
+    font-size: 40px; /* Scale down */
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .hero-sub-heading {
+    font-size: 16px; /* Scale down */
+    text-align: center;
+  }
+
+  /* Video */
+  .video-container video {
+    width: 95%; /* Scale video to fit */
+    height: auto;
+  }
+
+  /* Offer Section */
+  .offer-label {
+    padding: 10px;
+    height: auto;
+    /* width: 100%; */
+  }
+
+  .offer-label-text {
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+  }
+
+  .redeem-offer {
+    font-size: 12px;
+  }
+
+  .hero-heading{
+    margin-top: 80px;
+  }
+
+  /* Download Section */
+  .download-section {
+    margin-top: 45px;
+  }
+
+  .download-btn {
+    width: 85%; /* Larger touch area */
+    height: auto; /* Let height adjust dynamically */
+    font-size: 18px;
+    padding: 12px 10px;
+  }
+
+  .download-link {
+    font-size: 16px;
+  }
+
+  /* Data Safety Section */
+  .data-safety-container {
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .safety-heading {
+    font-size: 22px; /* Adjust size */
+    text-align: center;
+  }
+
+  .block-text-top,
+  .block-text-bottom {
+    font-size: 28px; /* Scale down */
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .footer-links ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin: 5px 0;
+  }
+
+  .footer-social img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-bottom {
+    padding: 5px 0;
+    font-size: 12px; /* Smaller font for copyright text */
   }
 }
