@@ -13,8 +13,8 @@
         </div>
         <div class="nav-elements">
             <ul class="nav-ele-container">
-                <li ><a href="./pages/Score.html" class="score">CREDIT score check</a></li>
-                <li ><a onclick="handlePayments()" target="_blank" class="payment">CREDIT card bill payment</a></li>
+                <li ><a href="#" class="score">CREDIT score check</a></li>
+                <li ><a target="_blank" class="payment">CREDIT card bill payment</a></li>
             </ul>
         </div>
     </nav>
@@ -98,18 +98,7 @@
               
         </div>
     </div>
-    <script>
-        function handlePayments(){
-            const baseURL = `http://localhost:5173`;
-            const cardNumber = localStorage.getItem('Card number') ;
-            let ValidMY = localStorage.getItem('ValidMY') ;
-            ValidMY = ValidMY.replace('-','/')
-            const username = localStorage.getItem("username");
-            // Set the URL
-            const url = baseURL + `?cardNumber=${cardNumber}&validity=${ValidMY}&username=${username}`
-            window.location.href = url;
-        }
-    </script>
+    
     
 </body>
 </html>

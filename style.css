@@ -344,7 +344,7 @@ video {
   }
 
   .CRED-logo {
-    max-width: 80%; /* Scale logo */
+    max-width: 65%; /* Scale logo */
     max-height: auto;
   }
 
@@ -365,6 +365,8 @@ video {
   .hero-section {
     padding: 20px 10px;
   }
+
+  
 
   .hero-heading {
     font-size: 40px; /* Scale down */
@@ -435,6 +437,13 @@ video {
     font-size: 28px; /* Scale down */
     text-align: center;
     padding: 0 10px;
+  }
+  .download-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
   }
 
   /* Footer */
